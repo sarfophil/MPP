@@ -1,0 +1,2 @@
+Because default methods are fully implemented methods,it gives the option to override or not to override
+which by default doesn't break code.

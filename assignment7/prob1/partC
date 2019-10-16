@@ -1,0 +1,1 @@
+HashCode must generate equal values for equal objects therefore we need to override the hashCode method.

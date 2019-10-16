@@ -1,0 +1,6 @@
+Firstly, the method 'contains(e)' which is found inside the listsAreEqual
+makes use of java.util method Objects.equals(o,e) to make comparison which determines
+equality by the "equals" of the first argument. In this context, equals is not overridden in the Employee
+class for the comparison. Also Employee class is error prone because there exist an equals method which will
+continue to be invoked when we introduce object version of equals.
+Therefore,We need to remove the equals method and override the Object's version of equals and hashCode methods
