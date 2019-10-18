@@ -1,4 +1,4 @@
-package com.mpp.lesson8.assignment8;
+package com.mpp.lesson8.assignment8.day1;
 
 import java.util.ArrayList;
 import java.util.List;

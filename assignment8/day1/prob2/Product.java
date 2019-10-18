@@ -1,4 +1,4 @@
-package com.mpp.lesson8.assignment8.prob2;
+package com.mpp.lesson8.assignment8.day1.prob2;
 
 /**
  * @author SARFO PHILIP

@@ -1,4 +1,4 @@
-package com.mpp.lesson8.assignment8;
+package com.mpp.lesson8.assignment8.day2;
 
 import java.util.Arrays;
 import java.util.List;
