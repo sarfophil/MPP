@@ -22,12 +22,8 @@ public class Main {
          System.out.println(productList);
 
          //c.
-         Collections.sort(productList, new Comparator<Product>() {
-             @Override
-             public int compare(Product o1, Product o2) {
-                 return o1.getTitle().compareToIgnoreCase(o2.getTitle());
-             }
-         });
+         Collections.sort(productList, sort("price"));
+         Collections.sort(productList,sort("title"));
 
          //d.
          Collections.sort(productList,(p1,p2)->{
@@ -35,5 +31,17 @@ public class Main {
                  return ((Integer) p1.getModel()).compareTo(((Integer) p2.getModel()));
              return p1.getTitle().compareToIgnoreCase(p2.getTitle());
          });
+    }
+
+    public static Comparator<Product> sort(String sortType){
+         return new Comparator<Product>() {
+             @Override
+             public int compare(Product o1, Product o2) {
+                 if(sortType.equals("price"))
+                     return ((Double) o1.getPrice()).compareTo(((Double) o2.getPrice()));
+                 // If sortType is not price
+                 return o1.getTitle().compareToIgnoreCase(o2.getTitle());
+             }
+         };
     }
 }
