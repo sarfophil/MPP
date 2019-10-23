@@ -80,7 +80,7 @@ public class ConstructorReference {
 		// Query 3 : Count the male candidates whose age is more than 30
 		processHuman(list)
 						.filter(human->human.gender.equals("Male") && human.age > 30)
-						.forEach(System.out::println);
+						.count();
 
 	}
 	
